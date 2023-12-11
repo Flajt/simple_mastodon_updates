@@ -32,8 +32,7 @@ dependencies:
     sdk: flutter
   simple_mastodon_updates:
     path: ../
-  flutter_simple_updates:
-    path: ../../flutter_simple_updates
+  flutter_simple_updates: ^0.1.2
 
 
   # The following adds the Cupertino Icons font to your application.
