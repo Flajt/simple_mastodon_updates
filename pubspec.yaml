@@ -1,6 +1,6 @@
 name: simple_mastodon_updates
 description: Mastodon parser for flutter_simple_updates.
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/flutter/simple_mastodon_updates
 repository: https://github.com/flutter/simple_mastodon_updates
 issue_tracker: https://github.com/flutter/simple_mastodon_updates/issues
