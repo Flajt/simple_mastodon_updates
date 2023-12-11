@@ -18,8 +18,10 @@ class SimpleMastodonParser extends AFeedParsingService {
     } else {
       final rssFeed = RssFeed.parse(resp.body);
       for (RssItem item in rssFeed.items) {
-        String cleanUpDescription = item.description!.replaceAll(
-            "<p>", ""); // Needed to rm the p tags so we can check the contents
+        String cleanUpDescription = item.description!
+            .replaceAll("<p>", "")
+            .replaceAll("</p>",
+                ""); // Needed to rm the p tags so we can check the contents
         if (cleanUpDescription.startsWith(trigger)) {
           DateFormat inputFormat = DateFormat('dd MMM yyyy hh:mm:ss +Z');
           String afterDayRm = item.pubDate!.split(", ")[1];
