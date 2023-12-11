@@ -1,9 +1,10 @@
-import 'package:dart_rss/dart_rss.dart';
 import 'package:flutter_simple_updates/flutter_simple_updates.dart';
 import 'package:flutter_simple_updates/models/FeedEntryModel.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
 import 'package:intl/intl.dart';
+import 'package:rss_dart/domain/rss_feed.dart';
+import 'package:rss_dart/domain/rss_item.dart';
 
 class SimpleMastodonParser extends AFeedParsingService {
   SimpleMastodonParser(super.trigger, super.id);
