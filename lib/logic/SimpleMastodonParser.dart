@@ -23,10 +23,10 @@ class SimpleMastodonParser extends AFeedParsingService {
             .replaceAll("</p>",
                 ""); // Needed to rm the p tags so we can check the contents
         if (cleanUpDescription.startsWith(trigger)) {
-          DateFormat inputFormat = DateFormat('dd MMM yyyy hh:mm:ss +Z');
+          DateFormat inputFormat = DateFormat('dd MMM yyyy hh:mm:ss +Z',
+              "en_US"); // For reasons unknown, the local needs to be present for things to work (without it only works in the example app, idk why)
           String afterDayRm = item.pubDate!.split(", ")[1];
-          String afterPad = afterDayRm.padRight(afterDayRm.length + 1, "");
-          DateTime dateTime = inputFormat.parse(afterPad);
+          DateTime dateTime = inputFormat.parse(afterDayRm);
           feedEntryModels.add(FeedEntryModel(cleanUpDescription,
               title: item.pubDate!,
               body: item.description!,
