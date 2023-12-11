@@ -1,0 +1,22 @@
+name: simple_mastodon_updates
+description: Mastodon parser for flutter_simple_updates.
+version: 0.0.1
+homepage: https://github.com/flutter/simple_mastodon_updates
+repository: https://github.com/flutter/simple_mastodon_updates
+issue_tracker: https://github.com/flutter/simple_mastodon_updates/issues
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  dart_rss: ^3.0.1
+  flutter:
+    sdk: flutter
+  flutter_simple_updates: ^0.0.1
+  http: ^0.13.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
