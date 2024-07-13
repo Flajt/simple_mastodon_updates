@@ -14,3 +14,7 @@
 
 ## 0.0.5
 - Fix: Add locale to resolve issues in external apps (it works fine in the example app without it, idk why)
+
+## 0.1.5
+
+- Chore: Upgrade deps
